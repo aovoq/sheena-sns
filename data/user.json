@@ -1,0 +1,32 @@
+[
+   {
+      "id": "voq",
+      "mail": "voq@example.com",
+      "pass": "$2y$10$0bdRff9F8hCq.5YHgmYb0OaBznvf0PaJQNa14JvhiBxHBXT/M1jkG"
+   },
+   {
+      "id": "pixel",
+      "mail": "pixel@example.com",
+      "pass": "$2y$10$0bdRff9F8hCq.5YHgmYb0OaBznvf0PaJQNa14JvhiBxHBXT/M1jkG"
+   },
+   {
+      "id": "pixel",
+      "mail": "pixel2323@example.com",
+      "pass": "$2y$10$0bdRff9F8hCq.5YHgmYb0OaBznvf0PaJQNa14JvhiBxHBXT/M1jkG"
+   },
+   {
+      "id": "hirata",
+      "mail": "hirata@example.com",
+      "pass": "$2y$10$0bdRff9F8hCq.5YHgmYb0OaBznvf0PaJQNa14JvhiBxHBXT/M1jkG"
+   },
+   {
+      "id": "ao",
+      "mail": "ao@example.com",
+      "pass": "$2y$10$0bdRff9F8hCq.5YHgmYb0OaBznvf0PaJQNa14JvhiBxHBXT/M1jkG"
+   },
+   {
+      "id": "delete",
+      "mail": "delete@delete.com",
+      "pass": "$2y$10$0bdRff9F8hCq.5YHgmYb0OaBznvf0PaJQNa14JvhiBxHBXT/M1jkG"
+   }
+]
