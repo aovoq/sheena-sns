@@ -14,7 +14,6 @@ include('components/_header.php');
       $postUsers = file_get_contents('data/postUsers.json');
       $postUsers = json_decode($postUsers, TRUE);
       foreach ($postUsers as $postUser) { ?>
-         <!-- <h3><a href="./user.php?id=<?= h($postUser['id']) ?>"><?= h($postUser['id']) ?></a></h3> -->
          <div class='postCard'>
             <a href="show.php?id=<?= h($postUser['id']) ?>">
                <img class="postCard__image" src="<?= h($postUser['image']) ?>">
