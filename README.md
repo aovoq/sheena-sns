@@ -12,19 +12,19 @@ php -S 127.0.0.1:3000 -t .
 # ScreenShots
 
 ホームページ
-![HomepageScreenshot](https://github.com/aovoq/sheena-sns/blog/main/screenshots/ss_home.png?raw=true)
+![HomepageScreenshot](https://github.com/aovoq/sheena-sns/blob/main/screenshots/ss_home.png?raw=true)
 
 ユーザーページ
-![UserpageScreenshot](https://github.com/aovoq/sheena-sns/blog/main/screenshots/ss_user.png?raw=true)
+![UserpageScreenshot](https://github.com/aovoq/sheena-sns/blob/main/screenshots/ss_user.png?raw=true)
 
 ポスト詳細
-![PostpageScreenshot](https://github.com/aovoq/sheena-sns/blog/main/screenshots/ss_post.png?raw=true)
+![PostpageScreenshot](https://github.com/aovoq/sheena-sns/blob/main/screenshots/ss_post.png?raw=true)
 
 自分のポストを見た時
-![MyPostpageScreenshot](https://github.com/aovoq/sheena-sns/blog/main/screenshots/ss_mypost.png?raw=true)
+![MyPostpageScreenshot](https://github.com/aovoq/sheena-sns/blob/main/screenshots/ss_mypost.png?raw=true)
 
 ログインページ
-![LoginpageScreenshot](https://github.com/aovoq/sheena-sns/blog/main/screenshots/ss_login.png?raw=true)
+![LoginpageScreenshot](https://github.com/aovoq/sheena-sns/blob/main/screenshots/ss_login.png?raw=true)
 
 アップロードページ
-![UploadpageScreenshot](https://github.com/aovoq/sheena-sns/blog/main/screenshots/ss_upload.png?raw=true)
+![UploadpageScreenshot](https://github.com/aovoq/sheena-sns/blob/main/screenshots/ss_upload.png?raw=true)
