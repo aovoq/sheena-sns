@@ -16,6 +16,9 @@ if ($isLogin) {
       $isMyaccount = true;
    }
 }
+
+$token = bin2hex(random_bytes(32));
+$_SESSION['token'] = $token;
 ?>
 
 
@@ -46,6 +49,7 @@ if ($isLogin) {
          </div>
          <?php if ($isMyaccount) { ?>
             <form id="update-form" action="/_update.php" method="POST" class="modal-desc">
+               <input type="hidden" name="token" value="<?= $token ?>">
                <input type="hidden" id="hidden-date-update" name="date" value="">
                <textarea name="desc" id="modal-desc"></textarea>
             </form>
@@ -59,6 +63,7 @@ if ($isLogin) {
                   <button form="update-form" class="modal-postUpdateButton">Update Description</button>
                </div>
                <form action="/_remove.php" method="POST" class="modal-form">
+                  <input type="hidden" name="token" value="<?= $token ?>">
                   <input type="hidden" id="hidden-date-remove" name="date" value="">
                   <button class="modal-postDeleteButton" onclick="return confirm('本当に削除してよろしいですか？')">Delete this post</button>
                </form>

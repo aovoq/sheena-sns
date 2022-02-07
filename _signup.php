@@ -3,7 +3,13 @@ $id = $_POST['id'];
 $mail = $_POST['mail'];
 $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-// NOTE: 例外処理
+if ($_POST['token'] != $_SESSION['token']) {
+   $_SESSION = array();
+   header("Location: index.php");
+   exit();
+}
+
+// TODO: 例外処理
 
 $filename = 'data/user.json';
 $json = file_get_contents($filename);

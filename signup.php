@@ -1,4 +1,9 @@
-<?php include('components/_header.php') ?>
+<?php
+include('components/_header.php');
+$token = bin2hex(random_bytes(32));
+$_SESSION['token'] = $token;
+
+?>
 <main class='wrapper'>
    <div class='login'>
       <div class="login__link--signin isSignup">
@@ -8,6 +13,7 @@
          <p><a href="/signup.php">新規登録</a></p>
       </div>
       <form action="_signup.php" method="POST" class='login__form isSignup'>
+         <input type="hidden" name="token" value="<?= $token ?>">
          <div class='login__inputWrapper isSignup'>
             <label for="id" class='login__label'>ID</label>
             <input type="text" name='id' required class='login__input'>

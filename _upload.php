@@ -4,8 +4,13 @@ $path = 'data/posts/';
 $dirname = $_SESSION['id'];
 $isFirst = false;
 
+if ($_POST['token'] != $_SESSION['token']) {
+   $_SESSION = array();
+   header("Location: index.php");
+   exit();
+}
+
 //TODO: 例外処理
-//NOTE: CSRF xxx
 //TODO: 容量の制限処理
 
 $image = $_FILES['image'];
@@ -14,6 +19,7 @@ $desc = $_POST['desc'];
 $filename = date('YmdHis');
 $jsonpath = "${path}${dirname}.json";
 $img_path = "${path}${dirname}/${filename}";
+
 
 if (file_exists($image['tmp_name']) && isset($desc)) {
    if (getimagesize($image['tmp_name'])) {

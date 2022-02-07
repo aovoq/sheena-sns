@@ -1,14 +1,14 @@
 <?php
-// if (empty($_SESSION['id'])) {
-//    header('Location: login.php?plz');
-// }
 include('components/_header.php');
-// TODO: ログインしてない場合のリダイレクト処理
 privatePage($isLogin);
+
+$token = bin2hex(random_bytes(32));
+$_SESSION['token'] = $token;
 ?>
 
 <main class="wrapper">
    <form action="_upload.php" method='POST' enctype='multipart/form-data' class='upload'>
+      <input type="hidden" name="token" value="<?= $token ?>">
       <div class='upload__left'>
          <div class="upload__dropArea">
             <span class="material-icons-outlined">

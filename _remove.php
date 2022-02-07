@@ -2,6 +2,12 @@
 include('components/_header.php');
 privatePage($isLogin);
 
+if ($_POST['token'] != $_SESSION['token']) {
+   $_SESSION = array();
+   header("Location: index.php");
+   exit();
+}
+
 $postJson = file_get_contents('data/posts/' . $_SESSION['id'] . '.json');
 $postDatas = json_decode($postJson, TRUE);
 $removeIndex = array_search(intval($_POST['date']), array_column($postDatas, 'date'));
